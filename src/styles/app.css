@@ -1,0 +1,14 @@
+@layer app {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+    background: var(--steam-color-bg-surface-0);
+    color: var(--steam-color-text-primary);
+    @apply typo-body-medium;
+  }
+
+  main {
+    @apply pb-40;
+  }
+}

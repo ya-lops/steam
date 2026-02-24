@@ -1,0 +1,79 @@
+---
+export interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'info' | 'success';
+  size?: 'sm' | 'md' | 'lg';
+  [key: string]: any;
+}
+
+const { 
+  href, 
+  variant = 'primary', 
+  size = 'md',
+  class: className,
+  ...rest 
+} = Astro.props;
+
+const Tag = href ? 'a' : 'button';
+---
+
+<Tag
+  class:list={[
+    'app-button',
+    `+${variant}`,
+    `+${size}`,
+    className
+  ]}
+  {...(href && { href })}
+  {...rest}
+>
+  <slot />
+</Tag>
+
+<style>
+  .app-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: 3px;
+    border: 1px solid var(--_border-color, var(--steam-color-secondary));
+    background: var(--_bg, none);
+    font-size: 16px;
+    cursor: pointer;
+
+    &:has(svg:only-child) {
+      padding: 12px;
+    }
+  }
+
+  .app-button.\+primary {
+    --_bg: var(--steam-color-secondary);
+    --_border-color: var(--_bg);
+
+    &:hover {
+      --_bg: color-mix(in oklab, var(--steam-color-secondary), #fff 5%);
+    }
+  }
+
+  .app-button.\+secondary {
+    --_bg: var(--steam-color-bg-surface-10);
+    --_border-color: var(--_bg);
+
+    &:hover {
+      --_bg: color-mix(in oklab, var(--steam-color-bg-surface-10), #fff 2%);
+    }
+  }
+
+  .app-button.\+success {
+    --_bg: var(--steam-color-accent-success);
+    --_border-color: var(--_bg);
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+
+    &:hover {
+      --_bg: color-mix(in oklab, var(--steam-color-accent-success), #000 10%);
+    }
+  }
+</style>

@@ -1,0 +1,102 @@
+---
+import StoreHeader from "@/components/store/StoreHeader.astro";
+import StoreSection from "@/components/store/StoreSection.astro";
+import GameCard from "@/components/ui/card/GameCard.astro";
+import GameCardCategory from "@/components/ui/card/GameCardCategory.astro";
+import GameCardFeature from "@/components/ui/card/GameCardFeature.astro";
+import Container from "@/components/ui/Container.astro";
+import AppLayout from "@/layouts/AppLayout.astro";
+---
+
+<AppLayout page="store">
+  <StoreHeader />
+
+  <div class="app-store-hero">
+    <img src="/src/assets/images/store/home_header_bg.png" />
+  </div>
+
+  <Container class="flex flex-col gap-40">
+    <StoreSection title="Популярное и рекомендуемое">
+      <GameCardFeature />
+    </StoreSection>
+
+    <StoreSection
+      title="Специальные предложения"
+      href="#more-special-games-link"
+    >
+      <div class="grid grid-cols-3 gap-4">
+        <!-- todo сделать рандомные -->
+        <GameCard gameId={1086940}/>
+        <GameCard gameId={275850} />
+        <GameCard gameId={413150} />
+      </div>
+    </StoreSection>
+
+    <StoreSection title="Категории">
+      <div class="grid grid-cols-5 gap-4">
+        <GameCardCategory
+          href="#link-category"
+          title="Файтинг"
+          bgColor="#171124"
+          bgImageSrc="https://store.akamai.steamstatic.com/categories/homepageimage/category/fighting_martial_arts?cc=us&l=russian&v=2"
+        />
+        <GameCardCategory
+          href="#link-category"
+          title="Бесплатные"
+          bgColor="#0E1325"
+          bgImageSrc="https://store.akamai.steamstatic.com/categories/homepageimage/freetoplay?cc=us&l=russian&v=2"
+        />
+        <GameCardCategory
+          href="#link-category"
+          title="Казуальные"
+          bgColor="#23374B"
+          bgImageSrc="https://store.akamai.steamstatic.com/categories/homepageimage/category/casual?cc=us&l=russian&v=2"
+        />
+        <GameCardCategory
+          href="#link-category"
+          title="Спорт"
+          bgColor="#163F24"
+          bgImageSrc="https://store.akamai.steamstatic.com/categories/homepageimage/category/sports?cc=us&l=russian&v=2"
+        />
+        <GameCardCategory
+          href="#link-category"
+          title="Симулятор"
+          bgColor="#583C1A"
+          bgImageSrc="https://store.akamai.steamstatic.com/categories/homepageimage/category/simulation?cc=us&l=russian&v=2"
+        />
+      </div>
+    </StoreSection>
+
+    <StoreSection title="Бесплатные" href="#more-free-games-link">
+      <div class="grid grid-cols-3 gap-4">
+        <GameCard free/>
+        <GameCard free/>
+        <GameCard free/>
+      </div>
+    </StoreSection>
+
+    <StoreSection title="Бестселлеры" href="#more-bestsellers-games-link">
+      <div class="grid grid-cols-2 gap-4">
+        <GameCard gameId={1086940} wide/>
+        <GameCard gameId={730} wide/>
+        <GameCard gameId={570} wide/>
+        <GameCard gameId={578080} wide/>
+        <GameCard gameId={252490} wide/>
+        <GameCard gameId={1623730} wide/>
+      </div>
+    </StoreSection>
+  </Container>
+</AppLayout>
+
+<style>
+  .app-store-hero {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 400px;
+    margin-bottom: -350px;
+    background-image: linear-gradient(
+      #040011 60%,
+      var(--steam-color-bg-surface-0)
+    );
+  }
+</style>

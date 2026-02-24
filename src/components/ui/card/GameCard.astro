@@ -1,0 +1,146 @@
+---
+import Button from "../Button.astro";
+import GameCardTooltip from "./GameCardTooltip.astro";
+import HeartWishIcon from "@icons/heart.svg";
+
+// Импортируем JSON
+import gamesData from "src/data/games.json";
+
+interface Props {
+  free?: boolean;
+  wide?: boolean;
+  gameId?: number; // Добавляем возможность выбирать игру по ID
+}
+
+const { free, wide, gameId = 730 } = Astro.props; // По умолчанию CS2
+
+// Курс доллара
+const USD_TO_RUB = 80;
+
+// Выбираем игру по ID
+const game = gamesData.find((g) => g.id === gameId) || gamesData[0];
+
+// Функция для форматирования цены
+const formatPrice = (priceInUSD: number) => {
+  if (priceInUSD === 0) return "Бесплатно";
+  const priceInRub = priceInUSD * USD_TO_RUB;
+  return priceInRub.toFixed(1) + " ₽";
+};
+
+// Проверяем, есть ли скидка
+const hasDiscount = game.price.discount && game.price.discount > 0;
+const oldPrice = hasDiscount ? formatPrice(game.price.base) : null;
+const newPrice = formatPrice(game.price.current);
+const discountPercent = hasDiscount ? game.price.discount : null;
+---
+
+<article class="app-game-card" class:list={wide && "+wide"}>
+  <a href={`/game/${game.id}`} class="contents">
+    <div class="_game-main-image">
+      <img
+        src={wide ? game.images.capsule : game.images.header}
+        alt={game.name}
+      />
+    </div>
+
+    <header class="_game-title typo-heading-large">{game.name}</header>
+
+    <div class="_game-offer flex items-center gap-2 mt-3">
+      {
+        game.price.current > 0 && (
+          <>
+            <Button variant="secondary">
+              <HeartWishIcon />
+            </Button>
+            <div class="_price typo-heading-small ml-auto">
+              {hasDiscount && (
+                <div class="_old-price line-through opacity-15">{oldPrice}</div>
+              )}
+              <div
+                class="_new-price"
+                class:list={
+                  hasDiscount && "text-(--steam-color-accent-success)"
+                }
+              >
+                {newPrice}
+              </div>
+            </div>
+            <Button
+              variant={hasDiscount ? "success" : "primary"}
+              data-tooltip="Добавить в корзину"
+            >
+              {hasDiscount ? `-${discountPercent}%` : "Купить"}
+            </Button>
+          </>
+        )
+      }
+
+      {
+        game.price.current === 0 && (
+          <Button class="ml-auto" variant="success">
+            Играть
+          </Button>
+        )
+      }
+    </div>
+  </a>
+
+  <GameCardTooltip
+    game={{
+      name: game.name,
+      description: game.description.full,
+      releaseDate: game.releaseDate,
+      screenshots: game.screenshots,
+      genres: game.genres,
+    }}
+    class="_game-tooltip"
+  />
+</article>
+
+<style>
+  .app-game-card {
+    padding: calc(var(--spacing) * 4);
+    border-radius: 5px;
+    background: var(--steam-color-bg-highlight);
+
+    ._game-main-image {
+      border-radius: 3px;
+      overflow: clip;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    ._game-tooltip {
+      display: none;
+    }
+
+    &:hover {
+      anchor-name: --game-card;
+
+      ._game-tooltip {
+        display: block;
+        position: fixed;
+        position-anchor: --game-card;
+        top: anchor(top);
+        z-index: 15;
+        align-self: anchor-center;
+        position-area: end;
+        position-try-fallbacks: flip-inline;
+      }
+    }
+  }
+
+  .app-game-card.\+wide {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 20px;
+
+    ._game-main-image {
+      grid-row-end: span 2;
+    }
+  }
+</style>

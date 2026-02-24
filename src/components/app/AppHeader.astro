@@ -1,0 +1,42 @@
+---
+import SteamLogo from "@icons/steam-logo.svg";
+
+interface Props {
+  page?: "store" | "community" | "profile" | "library"; // 1. Типизация
+}
+
+const navItems = [
+  { id: "store", label: "Магазин", href: "/store" },
+  { id: "community", label: "Сообщество", href: "/community" },
+  { id: "library", label: "Библиотека", href: "/library" },
+  { id: "profile", label: "Профиль", href: "/profile" },
+];
+
+const { page } = Astro.props;
+---
+
+<section
+  class="app-header flex items-center gap-12 py-4 px-6 bg-(--steam-color-bg-surface-10)"
+  data-page={page}
+>
+  <SteamLogo />
+
+  <nav class="app-nav">
+    <ul class="flex gap-12">
+      {
+        navItems.map((item) => (
+          <li>
+            <a
+              class="typo-heading-small uppercase"
+              class:list={page === item.id && "text-(--steam-color-primary)"}
+              href={item.href}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</section>
+

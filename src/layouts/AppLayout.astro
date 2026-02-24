@@ -1,0 +1,27 @@
+---
+import BaseHead from "@/components/app/BaseHead.astro";
+import AppHeader from "@/components/app/AppHeader.astro";
+import AppFooter from "@/components/app/AppFooter.astro";
+import TooltipSimple from "@/components/ui/TooltipSimple.astro";
+
+const {
+  title = "Steam :Re",
+  description = "Steam :Re description",
+  page,
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body>
+    <AppHeader {page} />
+    <main>
+      <slot />
+      <TooltipSimple />
+    </main>
+    <AppFooter />
+  </body>
+</html>

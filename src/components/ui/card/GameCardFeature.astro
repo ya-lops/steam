@@ -1,0 +1,150 @@
+---
+import Button from "../Button.astro";
+import GameTag from "../GameTag.astro";
+import WinOsLogo from "@icons/win-os-icon.svg";
+import GameCardTooltip from "./GameCardTooltip.astro";
+
+// Импортируем JSON
+import gamesData from "src/data/games.json";
+
+// Курс доллара
+const USD_TO_RUB = 80;
+
+// Функция для форматирования цены
+const formatPrice = (priceInUSD: number) => {
+  if (priceInUSD === 0) return "Бесплатно";
+
+  const priceInRub = priceInUSD * USD_TO_RUB;
+
+  // Форматируем с одним знаком после запятой
+  return priceInRub.toFixed(1) + " ₽";
+};
+// Берем первую игру
+const game = gamesData[0];
+---
+
+<article class="app-game-card +featured">
+  <a href={`/game/${game.id}`} class="contents">
+    <header class="_game-title typo-heading-large">{game.name}</header>
+    <p class="_game-description mb-2 typo-body-medium">
+      {game.description.full}
+    </p>
+
+    <div class="_game-images">
+      {
+        game.screenshots.map((screenshot) => (
+          <div
+            class="_game-images-item"
+            style={`--_data-item-image: url('${screenshot}')`}
+          />
+        ))
+      }
+    </div>
+
+    <div class="_game-system flex justify-between mt-3">
+      <div class="_game-tags flex gap-1">
+        {game.genres.map((genre) => <GameTag>{genre}</GameTag>)}
+      </div>
+      <div class="_game-os">
+        <WinOsLogo />
+      </div>
+    </div>
+
+    <div class="_game-offer flex items-center gap-2 mt-3">
+      {
+        game.price.current === 0 ? (
+          <Button variant="secondary">В желаемое</Button>
+        ) : (
+          <Button variant="secondary">В желаемое</Button>
+        )
+      }
+      <div class="_price typo-heading-small ml-auto">
+        {formatPrice(game.price.current)}
+      </div>
+      <Button
+        {...game.price.current > 0 && { "data-tooltip": "Добавить в корзину" }}
+      >
+        {game.price.current === 0 ? "Играть" : "Купить"}
+      </Button>
+    </div>
+
+    <div class="_game-main-image">
+      <img src={game.images.header} alt={game.name} fetchpriority="high" loading="eager" />
+    </div>
+  </a>
+</article>
+
+<style>
+  .app-game-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 230px 230px;
+    grid-template-rows: repeat(5, auto);
+    gap: calc(var(--spacing) * 2);
+    padding: calc(var(--spacing) * 4);
+    border-radius: 5px;
+    background: var(--steam-color-bg-highlight);
+
+    ._game-images {
+      display: contents;
+    }
+
+    ._game-main-image {
+      z-index: 3;
+      anchor-name: --main-image;
+      grid-column-start: 1;
+      grid-row: 1/7;
+      margin-right: calc(var(--spacing) * 3);
+      border-radius: 3px;
+      overflow: clip;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    ._game-title,
+    ._game-description,
+    ._game-system,
+    ._game-offer {
+      grid-column-start: 2;
+      grid-column-end: span 2;
+    }
+
+    ._game-images-item {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: var(--_data-item-image);
+      background-size: cover;
+    }
+
+    ._game-images-item:hover {
+      z-index: 5;
+
+      &::after {
+        content: "";
+        position: fixed;
+        position-anchor: --main-image;
+        top: anchor(top);
+        left: anchor(left);
+        width: anchor-size(width);
+        height: anchor-size(height);
+        border-radius: 3px;
+        background: var(--_data-item-image);
+        background-size: cover;
+        overflow: clip;
+        pointer-events: none;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        scale: 1.1 1.2;
+      }
+    }
+  }
+</style>

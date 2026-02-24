@@ -1,0 +1,722 @@
+[
+  {
+    "id": 1808500,
+    "name": "ARC Raiders",
+    "type": "game",
+    "developer": "Embark Studios",
+    "publisher": "Embark Studios",
+    "releaseDate": "2025-10-30",
+    "platforms": ["windows", "playstation", "xbox"],
+    "price": {
+      "base": 39.99,
+      "current": 39.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/5188aa2b07920afe9753409ea9fe3d1324cfc294/ss_5188aa2b07920afe9753409ea9fe3d1324cfc294.600x338.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/155fc161a45949e61f41e473282f9ed7ec221efe/ss_155fc161a45949e61f41e473282f9ed7ec221efe.600x338.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/1763664f3ea80080867eafa751685b7feec950c8/ss_1763664f3ea80080867eafa751685b7feec950c8.600x338.jpg",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1808500/cb49dfbcd7175c86e297b35ffc54cf779708f0ae/ss_cb49dfbcd7175c86e297b35ffc54cf779708f0ae.600x338.jpg"
+    ],
+    "genres": ["Экшен", "Бесплатно"],
+    "description": {
+      "short": "ARC Raiders — тактический шутер-экстракшен от третьего лица в мире, где человечество борется с машинами ARC.",
+      "full": "Объединяйтесь в отряды сопротивления до трех человек, исследуйте разрушенный мир, добывайте ресурсы и сражайтесь как с машинами ARC, так и с другими рейдерами в формате PvPvE."
+    },
+    "steam": {
+      "appid": 1808500,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/1808500/ARC_Raiders/"
+    },
+    "ratings": {
+      "totalPositive": 319656,
+      "totalNegative": 40171,
+      "score": 89
+    },
+    "popularity": {
+      "currentPlayers": 161023,
+      "peakAllTime": 12000000,
+      "peakLast30Days": 480923
+    },
+    "features": {
+      "singlePlayer": false,
+      "Мультиплеер": true,
+      "coop": true,
+      "pvp": true,
+      "crossPlatform": true
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 730,
+    "name": "Counter-Strike 2",
+    "type": "game",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "releaseDate": "2023-09-27",
+    "platforms": ["windows", "steamos"],
+    "price": {
+      "base": 0,
+      "current": 0,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_796601d9d67faf53486eeb26d0724347cea67ddc.1920x1080.jpg?t=1749053861",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_d830cfd0550fbb64d80e803e93c929c3abb02056.1920x1080.jpg?t=1749053861",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_0f8cf82d019c614760fd20801f2bb4001da7ea77.1920x1080.jpg?t=1749053861",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_2254a50f27951fb9028bc00b93a7f2ed7aac1e13.1920x1080.jpg?t=1749053861"
+    ],
+    "genres": ["Экшен", "Шутер", "Мультиплеер"],
+    "description": {
+      "short": "Counter-Strike 2 — многопользовательский тактический шутер от первого лица на движке Source 2.",
+      "full": "Обновленная версия легендарного шутера с улучшенной графикой, физикой и классическим соревновательным геймплеем."
+    },
+    "steam": {
+      "appid": 730,
+      "requiredAge": 0,
+      "isFree": true,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/730/CounterStrike_2/"
+    },
+    "ratings": {
+      "totalPositive": 6850000,
+      "totalNegative": 520000,
+      "score": 88
+    },
+    "popularity": {
+      "currentPlayers": 1515495,
+      "peakAllTime": 1810000,
+      "peakLast30Days": 1515000
+    },
+    "features": {
+      "singlePlayer": false,
+      "Мультиплеер": true,
+      "coop": false,
+      "pvp": true,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 570,
+    "name": "Dota 2",
+    "type": "game",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "releaseDate": "2013-07-09",
+    "platforms": ["windows", "steamos"],
+    "price": {
+      "base": 0,
+      "current": 0,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_ad8eee787704745ccdecdfde3a5cd2733704898d.1920x1080.jpg?t=1769535998",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_c9118375a2400278590f29a3537769c986ef6e39.1920x1080.jpg?t=1769535998",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_e0a92f15a6631a8186df79182d0fe28b5e37d8cb.1920x1080.jpg?t=1769535998",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_1f3b5f5ccf8b159294914c3fe028128a787304b6.1920x1080.jpg?t=1769535998"
+    ],
+    "genres": ["Стратегия", "MOBA", "Бесплатно"],
+    "description": {
+      "short": "Dota 2 — многопользовательская командная стратегия в реальном времени.",
+      "full": "Самая популярная MOBA в мире с огромным выбором героев, глубокой механикой и профессиональной киберспортивной сценой."
+    },
+    "steam": {
+      "appid": 570,
+      "requiredAge": 0,
+      "isFree": true,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/570/Dota_2/"
+    },
+    "ratings": {
+      "totalPositive": 2150000,
+      "totalNegative": 420000,
+      "score": 84
+    },
+    "popularity": {
+      "currentPlayers": 712345,
+      "peakAllTime": 1295326,
+      "peakLast30Days": 890000
+    },
+    "features": {
+      "singlePlayer": false,
+      "Мультиплеер": true,
+      "coop": false,
+      "pvp": true,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 578080,
+    "name": "PUBG: Battlegrounds",
+    "type": "game",
+    "developer": "KRAFTON",
+    "publisher": "KRAFTON",
+    "releaseDate": "2017-12-21",
+    "platforms": ["windows"],
+    "price": {
+      "base": 29.99,
+      "current": 29.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/c16e2f2d122cae77a1cbaca19263df0f2d2214fa/ss_c16e2f2d122cae77a1cbaca19263df0f2d2214fa.1920x1080.jpg?t=1764817633",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/3ae78fac4c07e9a2e2955286014355d6b7f3c8c7/ss_3ae78fac4c07e9a2e2955286014355d6b7f3c8c7.1920x1080.jpg?t=1764817633",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/faa4f9f6caa9613f07fd1193a143f66e0fac489c/ss_faa4f9f6caa9613f07fd1193a143f66e0fac489c.1920x1080.jpg?t=1764817633",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/dfbecb503265d4ba705f7ffb60eff2460c936d70/ss_dfbecb503265d4ba705f7ffb60eff2460c936d70.1920x1080.jpg?t=1764817633"
+    ],
+    "genres": ["Экшен", "Королевская битва", "Шутер"],
+    "description": {
+      "short": "PUBG — оригинальная королевская битва. Сражайтесь за выживание на огромном острове.",
+      "full": "100 игроков сражаются в реалистичной битве, собирая оружие и снаряжение. Последний выживший побеждает."
+    },
+    "steam": {
+      "appid": 578080,
+      "requiredAge": 18,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/578080/PUBG_Battlegrounds/"
+    },
+    "ratings": {
+      "totalPositive": 2450000,
+      "totalNegative": 1350000,
+      "score": 65
+    },
+    "popularity": {
+      "currentPlayers": 420000,
+      "peakAllTime": 3257248,
+      "peakLast30Days": 580000
+    },
+    "features": {
+      "singlePlayer": false,
+      "Мультиплеер": true,
+      "coop": false,
+      "pvp": true,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 252490,
+    "name": "Rust",
+    "type": "game",
+    "developer": "Facepunch Studios",
+    "publisher": "Facepunch Studios",
+    "releaseDate": "2018-02-08",
+    "platforms": ["windows", "mac"],
+    "price": {
+      "base": 39.99,
+      "current": 39.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_e825b087b95e51c3534383cfd75ad6e8038147c3.1920x1080.jpg?t=1771871433",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.1920x1080.jpg?t=1771871433",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_827f1bb38361eb3f7de91cff9be5b7176a05a9ac.1920x1080.jpg?t=1771871433",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/ss_c88939db635d959b25eb1bcf9b4c4dcdec04b3fe.1920x1080.jpg?t=1771871433"
+    ],
+    "genres": ["Выживание", "Мультиплеер", "Открытый мир"],
+    "description": {
+      "short": "Rust — многопользовательский симулятор выживания в открытом мире.",
+      "full": "Единственная цель в Rust — выжить. Сражайтесь с голодом, жаждой и холодом, стройте убежища и защищайтесь от других игроков."
+    },
+    "steam": {
+      "appid": 252490,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/252490/Rust/"
+    },
+    "ratings": {
+      "totalPositive": 915000,
+      "totalNegative": 180000,
+      "score": 84
+    },
+    "popularity": {
+      "currentPlayers": 185000,
+      "peakAllTime": 245000,
+      "peakLast30Days": 210000
+    },
+    "features": {
+      "singlePlayer": false,
+      "Мультиплеер": true,
+      "coop": true,
+      "pvp": true,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 1086940,
+    "name": "Baldur's Gate 3",
+    "type": "game",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios",
+    "releaseDate": "2023-08-03",
+    "platforms": ["windows", "mac"],
+    "price": {
+      "base": 59.99,
+      "current": 59.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_c73bc54415178c07fef85f54ee26621728c77504.1920x1080.jpg?t=1765505948",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_44d30da9c3e4622b46f2978e89bda0515856eaf4.1920x1080.jpg?t=1765505948",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_f8c7fcdeccbfe77e3fad33330a464fed30f781f0.1920x1080.jpg?t=1765505948",
+      "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/ss_49168eeefdfb6e6030a5aed3fd7c1a83da870a9f.1920x1080.jpg?t=1765505948"
+    ],
+    "genres": ["Ролевая", "Приключение", "Стратегия"],
+    "description": {
+      "short": "Baldur's Gate 3 — эпическая ролевая игра по мотивам Dungeons & Dragons.",
+      "full": "Соберите отряд и вернитесь в Забытые Королевства. Вас ждут история о дружбе и предательстве, выживании и самопожертвовании, о притяжении абсолютной власти."
+    },
+    "steam": {
+      "appid": 1086940,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"
+    },
+    "ratings": {
+      "totalPositive": 645000,
+      "totalNegative": 15000,
+      "score": 98
+    },
+    "popularity": {
+      "currentPlayers": 95000,
+      "peakAllTime": 875343,
+      "peakLast30Days": 120000
+    },
+    "features": {
+      "singlePlayer": true,
+      "Мультиплеер": true,
+      "coop": true,
+      "pvp": false,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": false,
+        "audio": false,
+        "subtitles": false
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 1623730,
+    "name": "Palworld",
+    "type": "game",
+    "developer": "Pocketpair",
+    "publisher": "Pocketpair",
+    "releaseDate": "2024-01-19",
+    "platforms": ["windows"],
+    "price": {
+      "base": 29.99,
+      "current": 29.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_f81b7c4f20be3b99f76a1415c4cdb9b444c99b97.1920x1080.jpg?t=1770887635",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_0c8cbc20442b948c91b02d9e1b41bf0638a07c08.1920x1080.jpg?t=1770887635",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_b7165373da28ac0088fb89c6444aa2de6dd68bca.1920x1080.jpg?t=1770887635",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_27258f5e9161bbffe37393e3b6752ad3bc1233c1.1920x1080.jpg?t=1770887635"
+    ],
+    "genres": ["Экшен", "Приключение", "Открытый мир", "Выживание"],
+    "description": {
+      "short": "Palworld — многопользовательский open-world симулятор выживания с существами.",
+      "full": "Сражайтесь, разводите, работайте и используйте загадочных существ 'Палов' в этом совершенно новом многопользовательском открытом мире выживания и строительства!"
+    },
+    "steam": {
+      "appid": 1623730,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/1623730/Palworld/"
+    },
+    "ratings": {
+      "totalPositive": 252000,
+      "totalNegative": 32000,
+      "score": 89
+    },
+    "popularity": {
+      "currentPlayers": 45000,
+      "peakAllTime": 2100000,
+      "peakLast30Days": 85000
+    },
+    "features": {
+      "singlePlayer": true,
+      "Мультиплеер": true,
+      "coop": true,
+      "pvp": true,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 275850,
+    "name": "No Man's Sky",
+    "type": "game",
+    "developer": "Hello Games",
+    "publisher": "Hello Games",
+    "releaseDate": "2016-08-12",
+    "platforms": ["windows", "mac"],
+    "price": {
+      "base": 59.99,
+      "current": 59.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/251992eb497ebef3bbd6e81e2c3e80a00d2770a6/ss_251992eb497ebef3bbd6e81e2c3e80a00d2770a6.1920x1080.jpg?t=1770822722",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/71f533720e58e1fb5dd61f23388abfe4f9caa6b5/ss_71f533720e58e1fb5dd61f23388abfe4f9caa6b5.1920x1080.jpg?t=1770822722",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/ss_32256c21c6bfd9032debf56e1af47029e6d9f9b0.1920x1080.jpg?t=1770822722",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/47005e90c31a62121610cbf29ce3dcc3c49dfa96/ss_47005e90c31a62121610cbf29ce3dcc3c49dfa96.1920x1080.jpg?t=1770822722"
+    ],
+    "genres": ["Экшен", "Приключение", "Открытый мир", "Выживание"],
+    "description": {
+      "short": "No Man's Sky — бесконечная вселенная для исследований.",
+      "full": "В этой бесконечной процедурно генерируемой вселенной вас ждут забытые цивилизации, инопланетные существа, опасные пираты и неоткрытые миры."
+    },
+    "steam": {
+      "appid": 275850,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/275850/No_Mans_Sky/"
+    },
+    "ratings": {
+      "totalPositive": 342000,
+      "totalNegative": 21000,
+      "score": 94
+    },
+    "popularity": {
+      "currentPlayers": 25000,
+      "peakAllTime": 212321,
+      "peakLast30Days": 38000
+    },
+    "features": {
+      "singlePlayer": true,
+      "Мультиплеер": true,
+      "coop": true,
+      "pvp": true,
+      "crossPlatform": true
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 2050650,
+    "name": "Hades II",
+    "type": "game",
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games",
+    "releaseDate": "2024-05-06",
+    "platforms": ["windows"],
+    "price": {
+      "base": 29.99,
+      "current": 29.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_ef0f63061d0a0a9a7e46f3b84f125d25330e8f19.1920x1080.jpg?t=1765831644",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_1845cb4482de047d4780ce9f95b2c5b53714c65e.1920x1080.jpg?t=1765831644",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_c8d2b18451a2cc4d5b4fdd78ed84a5e64e051eac.1920x1080.jpg?t=1765831644",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/ss_93a2b3a39788031aac115b2edeebcefe585d6c8d.1920x1080.jpg?t=1765831644"
+    ],
+    "genres": ["Экшен", "Ролевая", "Рогалик"],
+    "description": {
+      "short": "Hades II — продолжение культового рогалика про подземный мир.",
+      "full": "Сражайтесь за пределы Подземного мира в этой захватывающей рогалик-игре от создателей Bastion и Transistor. Используйте магию и оружие, чтобы победить титана времени."
+    },
+    "steam": {
+      "appid": 2050650,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "early_access",
+      "url": "https://store.steampowered.com/app/2050650/Hades_II/"
+    },
+    "ratings": {
+      "totalPositive": 85000,
+      "totalNegative": 5000,
+      "score": 94
+    },
+    "popularity": {
+      "currentPlayers": 35000,
+      "peakAllTime": 103567,
+      "peakLast30Days": 52000
+    },
+    "features": {
+      "singlePlayer": true,
+      "Мультиплеер": false,
+      "coop": false,
+      "pvp": false,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": false,
+        "audio": false,
+        "subtitles": false
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": true,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-24T10:00:00Z"
+  },
+  {
+    "id": 413150,
+    "name": "Stardew Valley",
+    "type": "game",
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "releaseDate": "2016-02-27",
+    "platforms": ["windows", "mac", "steamos"],
+    "price": {
+      "base": 14.99,
+      "current": 14.99,
+      "currency": "USD",
+      "discount": null
+    },
+    "images": {
+      "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
+      "capsule": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/capsule_231x87.jpg",
+      "background": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/page_bg_generated_v6b.jpg"
+    },
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg?t=1754692865",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_d836f0a5b0447fb6a2bdb0a6ac5f954949d3c41e.1920x1080.jpg?t=1754692865",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_1812b87f1fbbdf7205e8b8e2559c834e8ce2f323.1920x1080.jpg?t=1754692865",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_37f15ea893ec1fa7c9e73106f512e98161bac61b.1920x1080.jpg?t=1754692865"
+    ],
+    "genres": ["Симулятор фермы", "Ролевая игра", "Инди"],
+    "description": {
+      "short": "Унаследуйте старую ферму своего деда в долине Стардью. С помощью унаследованных инструментов и нескольких монет начните новую жизнь. Сможете ли вы превратить запущенное поле в цветущий дом?",
+      "full": "Вы унаследовали старую ферму своего деда в долине Стардью. С помощью унаследованных инструментов и нескольких монет вы начинаете новую жизнь. "
+    },
+    "steam": {
+      "appid": 413150,
+      "requiredAge": 0,
+      "isFree": false,
+      "releaseStatus": "released",
+      "url": "https://store.steampowered.com/app/413150/Stardew_Valley/"
+    },
+    "ratings": {
+      "totalPositive": 840921,
+      "totalNegative": 12000,
+      "score": 98
+    },
+    "popularity": {
+      "currentPlayers": 65000,
+      "peakAllTime": 94679,
+      "peakLast30Days": 85000
+    },
+    "features": {
+      "singlePlayer": true,
+      "multiplayer": true,
+      "coop": true,
+      "pvp": false,
+      "crossPlatform": false
+    },
+    "languages": [
+      {
+        "code": "ru",
+        "name": "Русский",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "interface": true,
+        "audio": false,
+        "subtitles": true
+      }
+    ],
+    "lastUpdated": "2026-02-25T10:00:00Z"
+  }
+]

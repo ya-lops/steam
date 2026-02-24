@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+  href?: string;
+}
+
+const { title, href } = Astro.props;
+---
+
+<section class="app-store-section">
+  <header class="flex justify-between items-center mb-3">
+    <div class="_title uppercase typo-heading-small">{title}</div>
+    {href && <a {href}>Смотреть все</a>}
+  </header>
+  <slot />
+</section>

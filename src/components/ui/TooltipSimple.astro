@@ -1,0 +1,49 @@
+---
+
+---
+
+<aside class="app-tooltip-simple"></aside>
+
+<style is:global>
+  [data-tooltip] {
+    &:hover {
+      anchor-name: --tooltip-anchor;
+
+      &::after {
+        content: attr(data-tooltip);
+        position: fixed;
+        position-anchor: --tooltip-anchor;
+        bottom: anchor(top);
+        justify-self: anchor-center;
+        z-index: 20;
+        position-try-fallbacks:
+          top,
+          top right,
+          right,
+          bottom,
+          bottom right,
+          bottom left,
+          left;
+        z-index: 20;
+        margin: 8px;
+        padding: 4px 6px;
+        border-radius: 3px;
+        border: 1px solid
+          color-mix(in oklab, var(--steam-color-bg-surface-10), #fff 3%);
+        background: var(--steam-color-bg-surface-10);
+        color: var(--steam-color-text-primary);
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.2;
+        max-width: min(300px, 90vw);
+        text-align: center;
+        text-wrap: balance;
+        transition: 0.25s opacity 0.33s ease;
+
+        @starting-style {
+          opacity: 0;
+        }
+      }
+    }
+  }
+</style>

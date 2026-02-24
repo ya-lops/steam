@@ -1,11 +1,26 @@
 // @ts-check
+import { defineConfig } from "astro/config";
 
-import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
-import { defineConfig } from 'astro/config';
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
-	integrations: [mdx(), sitemap()],
+  redirects: {
+    "/": "/store",
+  },
+  build: {
+    inlineStylesheets: "always",
+  },
+  vite: {
+    build: {
+      cssCodeSplit: true,
+    },
+    css: {
+      devSourcemap: true,
+    },
+    plugins: [tailwindcss()],
+  },
+  devToolbar: {
+    enabled: false,
+  },
 });

@@ -1,0 +1,52 @@
+---
+import Container from "@ui/Container.astro";
+
+import ValveLogo from "@icons/valve-logo.svg";
+import SteamLogoBig from "@icons/steam-logo-big.svg";
+---
+
+<footer class="app-footer min-h-81 py-12 bg-(--steam-color-bg-footer) typo-body-large">
+  <Container>
+    <section class="flex flex-wrap gap-4">
+      <ValveLogo />
+      <SteamLogoBig />
+      <p class="w-full mt-3 text-(--steam-color-text-secondary)">
+        © 2026 ООО «СтимКлон». Все права защищены Роскомнадзором. Все товарные знаки принадлежат их владельцам, но мы всё равно их используем. НДС включён в цену, а совесть — нет.
+      </p>
+    </section>
+    <section>
+      <nav class="flex gap-x-16">
+        <div class="_nav-group flex flex-col gap-4">
+          <a href="">About Valve</a>
+          <a href="">Jobs</a>
+          <a href="">Steamworks</a>
+          <a href="">Steam Distribution</a>
+          <a href="">Support</a>
+        </div>
+        <div class="_nav-group flex flex-col gap-4">
+          <a href="">Privacy Policy</a>
+          <a href="">Legal</a>
+          <a href="">Steam Subscriber Agreement</a>
+          <a href="">Refunds</a>
+          <a href="">Cookies</a>
+        </div>
+      </nav>
+    </section>
+    <section class="justify-self-end">
+      <div class="_links">
+        <a href="#1">Link1</a>
+        <a href="#1">Link2</a>
+      </div>
+    </section>
+  </Container>
+</footer>
+
+<style>
+  .app-footer {
+    .container {
+      display: grid;
+      grid-template-columns: minmax(0,420px) minmax(0,1fr) auto;
+      gap: calc(var(--spacing) * 25);
+    }
+  }
+</style>
