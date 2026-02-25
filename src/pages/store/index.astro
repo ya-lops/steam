@@ -16,7 +16,7 @@ const { hero = HeroImg } = Astro.props;
   <StoreHeader />
 
   <div class="app-store-hero">
-    <img src={hero.src} />
+    <img src={hero.src} fetchpriority="high" loading="eager" />
   </div>
 
   <Container class="flex flex-col gap-40">
@@ -29,7 +29,7 @@ const { hero = HeroImg } = Astro.props;
       href="#more-special-games-link"
     >
       <div class="grid grid-cols-3 gap-4">
-        <GameCard gameId={1086940}/>
+        <GameCard gameId={1086940} />
         <GameCard gameId={275850} />
         <GameCard gameId={413150} />
       </div>
@@ -72,20 +72,20 @@ const { hero = HeroImg } = Astro.props;
 
     <StoreSection title="Бесплатные" href="#more-free-games-link">
       <div class="grid grid-cols-3 gap-4">
-        <GameCard free/>
-        <GameCard free/>
-        <GameCard free/>
+        <GameCard free />
+        <GameCard free />
+        <GameCard free />
       </div>
     </StoreSection>
 
     <StoreSection title="Бестселлеры" href="#more-bestsellers-games-link">
       <div class="grid grid-cols-2 gap-4">
-        <GameCard gameId={1086940} wide/>
-        <GameCard gameId={730} wide/>
-        <GameCard gameId={570} wide/>
-        <GameCard gameId={578080} wide/>
-        <GameCard gameId={252490} wide/>
-        <GameCard gameId={1623730} wide/>
+        <GameCard gameId={1086940} wide />
+        <GameCard gameId={730} wide />
+        <GameCard gameId={570} wide />
+        <GameCard gameId={578080} wide />
+        <GameCard gameId={252490} wide />
+        <GameCard gameId={1623730} wide />
       </div>
     </StoreSection>
   </Container>
