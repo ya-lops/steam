@@ -6,13 +6,17 @@ import GameCardCategory from "@/components/ui/card/GameCardCategory.astro";
 import GameCardFeature from "@/components/ui/card/GameCardFeature.astro";
 import Container from "@/components/ui/Container.astro";
 import AppLayout from "@/layouts/AppLayout.astro";
+
+import HeroImg from "@/assets/images/store/home_header_bg.png";
+
+const { hero = HeroImg } = Astro.props;
 ---
 
 <AppLayout page="store">
   <StoreHeader />
 
   <div class="app-store-hero">
-    <img src="/src/assets/images/store/home_header_bg.png" />
+    <img src={hero.src} />
   </div>
 
   <Container class="flex flex-col gap-40">
@@ -25,7 +29,6 @@ import AppLayout from "@/layouts/AppLayout.astro";
       href="#more-special-games-link"
     >
       <div class="grid grid-cols-3 gap-4">
-        <!-- todo сделать рандомные -->
         <GameCard gameId={1086940}/>
         <GameCard gameId={275850} />
         <GameCard gameId={413150} />

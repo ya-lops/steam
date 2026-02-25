@@ -4,31 +4,35 @@ import GameTag from "../GameTag.astro";
 import WinOsLogo from "@icons/win-os-icon.svg";
 import GameCardTooltip from "./GameCardTooltip.astro";
 
-// Импортируем JSON
 import gamesData from "src/data/games.json";
 
-// Курс доллара
 const USD_TO_RUB = 80;
 
-// Функция для форматирования цены
 const formatPrice = (priceInUSD: number) => {
   if (priceInUSD === 0) return "Бесплатно";
-
   const priceInRub = priceInUSD * USD_TO_RUB;
-
-  // Форматируем с одним знаком после запятой
   return priceInRub.toFixed(1) + " ₽";
 };
-// Берем первую игру
+
 const game = gamesData[0];
 ---
 
 <article class="app-game-card +featured">
   <a href={`/game/${game.id}`} class="contents">
     <header class="_game-title typo-heading-large">{game.name}</header>
+
     <p class="_game-description mb-2 typo-body-medium">
       {game.description.full}
     </p>
+
+    <div class="_game-main-image">
+      <img
+        src={game.images.header}
+        alt={game.name}
+        fetchpriority="high"
+        loading="eager"
+      />
+    </div>
 
     <div class="_game-images">
       {
@@ -58,18 +62,16 @@ const game = gamesData[0];
           <Button variant="secondary">В желаемое</Button>
         )
       }
+
       <div class="_price typo-heading-small ml-auto">
         {formatPrice(game.price.current)}
       </div>
+
       <Button
         {...game.price.current > 0 && { "data-tooltip": "Добавить в корзину" }}
       >
         {game.price.current === 0 ? "Играть" : "Купить"}
       </Button>
-    </div>
-
-    <div class="_game-main-image">
-      <img src={game.images.header} alt={game.name} fetchpriority="high" loading="eager" />
     </div>
   </a>
 </article>
